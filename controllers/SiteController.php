@@ -86,6 +86,12 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionHi($message = 'Привет')
+    {
+        echo "hi";
+        return $this->render('seed', ['message' => $message]);
+    }
+
     /**
      * Logout action.
      *
