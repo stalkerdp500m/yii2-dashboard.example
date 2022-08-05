@@ -25,12 +25,7 @@ class DashboardController extends Controller
             ->orderBy('name')
             ->where(['not', ['resolved_at' => null]])
             ->andFilterWhere(['between', 'resolved_at', $dateStart, $dateEnd])
-            //    ->createCommand()->getRawSql()
             ->asArray()->all();
-
-        // echo $tickets;
-        // return $tickets;
-
 
 
         $categoryList = Categories::find()

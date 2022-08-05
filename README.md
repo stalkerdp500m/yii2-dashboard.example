@@ -1,9 +1,10 @@
 <p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 Basic Project Dashboard</h1>
+ <h1 align="center">Yii 2 Basic Project Dashboard</h1>
     <br>
+    <a href="https://yii-dashboard.exempl-projects.ml/" target="_blank">
+        <img src="https://yii-dashboard.exempl-projects.ml/dashbourd-screen.png" height="300px">
+    </a>
+
 </p>
 
 
@@ -12,6 +13,11 @@
 Клонируйте репозитрий
 ~~~
 git clone https://github.com/stalkerdp500m/yii2-dashboard.exempl
+~~~
+
+Перейдите в папку проекта
+~~~
+cd .\yii2-dashboard.exempl\
 ~~~
 
 Установите зависимости
