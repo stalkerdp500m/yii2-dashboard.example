@@ -12,12 +12,12 @@
 ------------
 Клонируйте репозитрий
 ~~~
-git clone https://github.com/stalkerdp500m/yii2-dashboard.exempl
+git clone https://github.com/stalkerdp500m/yii2-dashboard.example
 ~~~
 
 Перейдите в папку проекта
 ~~~
-cd .\yii2-dashboard.exempl\
+cd .\yii2-dashboard.example\
 ~~~
 
 Установите зависимости
