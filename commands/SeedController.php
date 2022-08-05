@@ -21,20 +21,26 @@ class SeedController extends Controller
         $faker = Factory::create();
 
 
-        for ($i = 0; $i < 20; $i++) {
+        echo "\n \n generate managers \n";
+        for ($i = 0; $i < 30; $i++) {
+            echo $i . " ";
             $manager = new Managers();
             $manager->name = $faker->name();
             $manager->save();
         }
 
+        echo "\n \ngenerate statuses \n";
         foreach (["Новая", "В работе", "Решена"] as  $stausTitle) {
+            echo $stausTitle . " ";
             if (!Statuses::findOne(['title' => $stausTitle])) {
                 $status = new Statuses();
                 $status->title = $stausTitle;
                 $status->save();
             }
         }
+        echo "\n \n generate category \n";
         foreach (["Отключение", "Проверка/удешевление", "Тех. вопрос", "Прочее"] as $categoryTitle) {
+            echo $categoryTitle . " ";
             if (!Categories::findOne(['title' => $categoryTitle])) {
                 $category = new Categories();
                 $category->title = $categoryTitle;
@@ -43,10 +49,11 @@ class SeedController extends Controller
         }
 
 
-        for ($i = 0; $i < 50; $i++) {
-            echo random_int(1, 4);
+        echo "\n \n generate tickets \n";
+        for ($i = 0; $i < 1000; $i++) {
+            echo $i . " ";
             $ticket = new Tickets();
-            $ticket->manager_id = random_int(1, 20);
+            $ticket->manager_id = random_int(1, 30);
             $ticket->status_id = random_int(1, 3);
             $ticket->category_id = random_int(1, 4);
             $ticket->body = $faker->text(30);
